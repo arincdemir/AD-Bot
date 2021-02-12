@@ -14,8 +14,7 @@ initialPrices = settings.initialPrices
 yields = settings.yields
 startingAccountMap = settings.startingAccountMap
 
-if(not "bank accounts" in db.keys()):
-  db["bank accounts"] = {}
+if(not "bank accounts" in db.keys()): db["bank accounts"] = {}
 if(not "last yields" in db.keys()):
   db["last yields"] = {}
 print(db["bank accounts"])
@@ -91,7 +90,14 @@ def timeForCollecting(user):
 
 def findTimeToYield(user):
   userText = str(user)
-  return (waitForYields - time.time() + db["last yields"][userText])
+  if(not userText in db["last yields"]):
+    yieldsDB = db["last yields"]
+    yieldsDB[userText] = time.time()
+    db["last yields"] = yieldsDB
+    return 0
+  else:
+    userText = str(user)
+    return (waitForYields - time.time() + db["last yields"][userText])
 
 @client.event
 async def on_ready():
