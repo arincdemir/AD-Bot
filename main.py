@@ -19,7 +19,7 @@ async def on_message(message):
     return
   msg = message.content
   if(msg.startswith("-p ")):
-    await message.channel.send("playlesene lan")
+    await message.channel.send("playesene lan")
   
 
 
