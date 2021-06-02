@@ -18,10 +18,12 @@ async def on_message(message):
   if(message.author == client.user):
     return
   msg = message.content
-  if(msg.startswith("-p ")):
+  if(msg.startswith('?play ')):
+    await message.channel.send('Takkinin çöptürük botundan bir ukte:')
+  if(msg.startswith("-p ") or msg.startswith("-play ")):
     await message.channel.send("playsene lan")
+    
   
-
 
 keep_alive()
 client.run(os.getenv("TOKEN"))
