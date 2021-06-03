@@ -29,7 +29,7 @@ async def on_message(message):
 
 
 #____________________dick part____________________#
-  if(msg.startswith("dick size") or msg.startswith("-play ")):
+  if(msg.startswith("dick size")):
     
     await message.channel.send("playsene lan")
     dickSize=random.random(0,20)
