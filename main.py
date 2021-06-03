@@ -22,6 +22,8 @@ async def on_message(message):
   msg = message.content
   if(msg.startswith('?play ege')):
     await message.channel.send('İşten yeni çıktım arkadaşlar kendimi gangıster gibi hissediyorum')
+  if(msg.startswith('sa')):
+    await message.channel.send('as')
   if msg.startswith('?play orekto'):
     await message.channel.send('███░███░███░███░░███░█░█░████\n█░░░█░░░█░█░█░░█░█░░░█░█░░░█░\n███░███░█░█░███░░███░█░█░░█░░\n█░░░█░░░█░█░█░░█░░░█░█░█░█░░░\n███░█░░░███░█░░█░███░███░████')
   if(msg.startswith("-p ") or msg.startswith("-play ")):
@@ -30,13 +32,17 @@ async def on_message(message):
 
 #____________________dick part____________________#
   if(msg.startswith("dick size")):
-    dickSize=round(random.random()*20)
-    dick = "8"
-    while(dickSize!=0):
-      dick += "="
-      dickSize -= 1 
-    dick += ">"
-    await message.channel.send(dick)
+    if(message.author == "taks"):
+      await message.channel.send("you should have a dick :(")
+    else:
+      dickSize=round(random.random()*20)
+      dick = "8"
+      while(dickSize!=0):
+        dick += "="
+        dickSize -= 1 
+      dick += ">"
+      await message.channel.send(dick)
+    
 
 
 
