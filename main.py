@@ -35,7 +35,7 @@ async def on_message(message):
     dickSize=random.random(0,20)
     dick = "8"
     while(dickSize!=0):
-      dick + "=" 
+      dick += "=" 
       dickSize -= 1
     dick + ">"
     await message.channel.send(dick)
