@@ -30,9 +30,7 @@ async def on_message(message):
 
 #____________________dick part____________________#
   if(msg.startswith("dick size")):
-    
-    await message.channel.send("playsene lan")
-    dickSize=random.random(0,20)
+    dickSize=round(random.random()*20)
     dick = "8"
     while(dickSize!=0):
       dick += "="
