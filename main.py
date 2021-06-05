@@ -22,7 +22,7 @@ async def on_message(message):
   msg = message.content
   if(msg.startswith('?play ege')):
     await message.channel.send('İşten yeni çıktım arkadaşlar kendimi gangıster gibi hissediyorum')
-  if(msg.startswith('sa')):
+  if(msg.startswith('sa ')):
     await message.channel.send('as')
   if msg.startswith('?play orekto'):
     await message.channel.send('███░███░███░███░░███░█░█░████\n█░░░█░░░█░█░█░░█░█░░░█░█░░░█░\n███░███░█░█░███░░███░█░█░░█░░\n█░░░█░░░█░█░█░░█░░░█░█░█░█░░░\n███░█░░░███░█░░█░███░███░████')
