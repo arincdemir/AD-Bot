@@ -34,6 +34,8 @@ async def on_message(message):
   if(msg.startswith("dick size")):
     if(message.author.name == "Pulsefire Musty"):
       await message.channel.send("you should have a dick :(")
+    elif(message.author.name == "Taks"):
+      await message.channel.send("soyleyem onu surpiz")
     else:
       dickSize=round(random.random()*20)
       dick = "8"
