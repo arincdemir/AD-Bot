@@ -17,6 +17,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+
   if(message.author == client.user):
     return
   msg = message.content
@@ -32,10 +33,14 @@ async def on_message(message):
 
 #____________________dick part____________________#
   if(msg.startswith("dick size")):
-    if(message.author.name == "Pulsefire Musty"):
+    if(message.author.name == "Mustafa Dinç"):
       await message.channel.send("you should have a dick :(")
-    elif(message.author.name == "Taks"):
+    elif(message.author.name == "Ömer Takkin"):
       await message.channel.send("soyleyem onu surpiz")
+    elif(message.author.name == "serhatekli"):
+      await message.channel.send("3")
+    elif(message.author.name == "arincdemir"):
+      await message.channel.send("8=====================================================>")
     else:
       dickSize=round(random.random()*20)
       dick = "8"
